@@ -10,7 +10,7 @@
             * {
                 margin: 0;
                 padding: 0;
-                box-sizing: ;
+                box-sizing: border-box;
             }
             html, body {
                 width: 100%;
@@ -40,13 +40,15 @@
             #container-login:hover {
                 box-shadow: 0px 0px 6px #03f60b;
             }
-
-            #container-login > #logo-perfil {
-                width: 20%;
-                height: 20%;
-                overflow: hidden;
-                border-radius: 50px;
-                background-color: white;
+            
+            @media (max-width:720px) {
+                #container-login > #logo-perfil {
+                    width: 21%;
+                    height: 20%;
+                    overflow: hidden;
+                    border-radius: 50px;
+                    background-color: white;
+                }
             }
 
             #container-login > #logo-perfil img {
